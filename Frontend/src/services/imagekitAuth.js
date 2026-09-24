@@ -1,6 +1,6 @@
 export const authenticator = async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/admin/imagekit-auth');
+    const response = await fetch('https://online-lecture-scheduler-yc31.onrender.com/api/admin/imagekit-auth');
 
     if (!response.ok) {
       const errorText = await response.text();
