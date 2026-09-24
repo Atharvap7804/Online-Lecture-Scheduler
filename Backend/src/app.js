@@ -10,7 +10,6 @@ const adminRoutes = require('./routes/admin.routes')
 const instructorRoutes = require('./routes/instructor.routes')
 
 
-// Routes Mount
 app.use('/api/admin', adminRoutes);
 app.use('/api/instructor', instructorRoutes);
 

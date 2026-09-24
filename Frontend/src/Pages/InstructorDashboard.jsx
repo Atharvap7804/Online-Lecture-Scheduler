@@ -26,7 +26,7 @@ export default function InstructorDashboard() {
     loadSchedules();
   }, [user]);
 
-  // Clean Date Formatter
+
   const formatDate = (dateString) => {
     if (!dateString) return 'N/A';
     const cleanDate = dateString.split('T')[0];
@@ -37,7 +37,7 @@ export default function InstructorDashboard() {
 
   return (
     <div className="space-y-6">
-      {/* Top Welcome Banner */}
+      {/* Top Bar */}
       <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl flex justify-between items-center relative overflow-hidden">
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div>
@@ -52,7 +52,7 @@ export default function InstructorDashboard() {
         </div>
       </div>
 
-      {/* Main Schedule Workspace */}
+      {/* Main Schedule */}
       <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl">
         <div className="flex justify-between items-center mb-6 border-b border-slate-800 pb-4">
           <div>

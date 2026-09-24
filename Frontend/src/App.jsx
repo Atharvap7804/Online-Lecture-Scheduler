@@ -7,14 +7,13 @@ import InstructorDashboard from './Pages/InstructorDashboard';
 function MainLayout() {
   const { user, logout } = useAuth();
 
-  // Agar user logged in nahi hai, toh Login Page dikhao
+
   if (!user) {
     return <LoginPage />;
   }
 
   return (
     <div className="min-h-screen bg-[#0f172a] text-slate-100">
-      {/* Dark Glassmorphic Navbar */}
       <header className="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div>
@@ -34,7 +33,7 @@ function MainLayout() {
         </div>
       </header>
 
-      {/* Main Dark Workspace */}
+    
       <main className="max-w-7xl mx-auto px-6 py-8">
         {user.role === 'admin' ? (
           <AdminDashboard />
