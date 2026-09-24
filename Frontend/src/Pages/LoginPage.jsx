@@ -88,9 +88,6 @@ export default function LoginPage() {
                 required
                 className="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
               />
-              <p className="text-[11px] text-slate-500 mt-2">
-                Default demo passcode: <code className="bg-slate-950 text-indigo-400 px-1.5 py-0.5 rounded border border-slate-800">admin123</code>
-              </p>
             </div>
           ) : (
             <div>
